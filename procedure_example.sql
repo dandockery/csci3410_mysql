@@ -5,6 +5,8 @@ delimiter //
 
 -- this procedure will perform 4 statements to process
 -- items in the shopping cart 
+DROP PROCEDURE IF EXISTS processShoppingCart;
+
 CREATE PROCEDURE processShoppingCart (
 	IN CustomerID INT, 
 	IN AddressID INT
